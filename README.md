@@ -16,6 +16,8 @@ and run the following command to see if it has been properly installed or not:
 mvm -v
 ```
 
+I followed this manual installation of this [blog post](http://www.mkyong.com/maven/install-maven-on-mac-osx/).
+
 ## Installing Spark
 
 Just go through all the steps mentioned in [this blog post](https://shellzero.wordpress.com/2015/07/24/how-to-install-apache-spark-on-mac-os-x-yosemite/)
