@@ -8,14 +8,12 @@ Download Binary from (here)[https://maven.apache.org/download.cgi]. Extract it. 
 ```
 export M2_HOME=/Users/Yash/Downloads/apache-maven-3.1.1
 export PATH=$PATH:$M2_HOME/bin
-
 ```
 
 and run the following command to see if it has been properly installed or not:
 
 ```
 mvm -v
-
 ```
 
 ## Installing Spark
