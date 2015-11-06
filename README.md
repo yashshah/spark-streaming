@@ -3,7 +3,7 @@ Getting started with spark streaming
 
 
 ## Installing Maven
-Download Binary from (here)[https://maven.apache.org/download.cgi]. Extract it. Edit your bash_profile with this:
+Download Binary from [here](https://maven.apache.org/download.cgi). Extract it. Edit your bash_profile with this:
 
 ```
 export M2_HOME=/Users/Yash/Downloads/apache-maven-3.1.1
