@@ -26,6 +26,8 @@ if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: network_wordcount.py <hostname> <port>", file=sys.stderr)
         exit(-1)
+
+	# Create a local StreamingContext with working thread and batch interval of 1 second        
     sc = SparkContext(appName="PythonStreamingNetworkWordCount")
     ssc = StreamingContext(sc, 1)
 
@@ -33,7 +35,9 @@ if __name__ == "__main__":
     counts = lines.flatMap(lambda line: line.split(" "))\
                   .map(lambda word: (word, 1))\
                   .reduceByKey(lambda a, b: a+b)
+    # Pretty print
     counts.pprint()
-
+    # Start the computation
     ssc.start()
+    # Wait for the computation to terminate
     ssc.awaitTermination()
